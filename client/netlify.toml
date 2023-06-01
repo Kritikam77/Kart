@@ -1,6 +1,6 @@
 [[redirects]]
   from = "/api/v1/*"
-  to = "https://kart.onrender.com/api/v1/:splat"
+  to = "https://kart-jhb6.onrender.com/api/v1/:splat"
   status = 200
 
 [[redirects]]
