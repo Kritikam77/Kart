@@ -123,7 +123,7 @@ const UpdateProduct = () => {
                 value={category}
               >
                 {categories?.map((c) => (
-                  <Option key={c._id} value={c._id}>
+                  <Option key={`${c._id}+12321`} value={c._id}>
                     {c.name}
                   </Option>
                 ))}

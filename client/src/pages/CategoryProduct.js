@@ -33,7 +33,7 @@ const CategoryProduct = () => {
           <div className="col-md-9 offset-1">
             <div className="d-flex flex-wrap">
               {products?.map((p) => (
-                <div className="card m-2" key={p._id}>
+                <div className="card m-2" key={`${p._id}+56`}>
                   <img
                     src={`/api/v1/product/product-photo/${p._id}`}
                     className="card-img-top"

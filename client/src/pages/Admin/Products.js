@@ -33,7 +33,7 @@ const Products = () => {
           <div className="d-flex flex-wrap">
             {products?.map((p) => (
               <Link
-                key={p._id}
+                key={`${p._id}+11435`}
                 to={`/dashboard/admin/product/${p.slug}`}
                 className="product-link"
               >
