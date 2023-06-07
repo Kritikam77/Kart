@@ -32,6 +32,7 @@ const HomePage = () => {
     }
   };
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     getAllCategory();
     getTotal();
@@ -59,6 +60,7 @@ const HomePage = () => {
     }
   };
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     if (page === 1) return;
     loadMore();
@@ -86,10 +88,12 @@ const HomePage = () => {
     }
     setChecked(all);
   };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     if (!checked.length || !radio.length) getAllProducts();
   }, [checked.length, radio.length]);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     if (checked.length || radio.length) filterProduct();
   }, [checked, radio]);
@@ -156,10 +160,7 @@ const HomePage = () => {
                   alt={p.name}
                 />
                 <div className="card-body">
-                  <div
-                    className="card-name-price"
-                    style={{display:"grid" }}
-                  >
+                  <div className="card-name-price" style={{ display: "grid" }}>
                     <h6 className="card-title">{p.name}</h6>
                     <h6 className="card-title card-price">
                       {p.price.toLocaleString("en-US", {

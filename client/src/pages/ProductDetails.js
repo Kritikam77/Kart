@@ -10,7 +10,8 @@ const ProductDetails = () => {
   const [product, setProduct] = useState({});
   const [relatedProducts, setRelatedProducts] = useState([]);
 
-  //initalp details
+  //inital details
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     if (params?.slug) getProduct();
   }, [params?.slug]);

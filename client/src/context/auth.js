@@ -11,6 +11,7 @@ const AuthProvider = ({ children }) => {
   //default axios
   axios.defaults.headers.common["Authorization"] = auth?.token;
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     const data = localStorage.getItem("auth");
     if (data) {
